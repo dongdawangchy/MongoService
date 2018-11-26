@@ -1,0 +1,5 @@
+<channel>
+	<source name="BZ_ACT_LOG" path="/emr_data/base/BASE_BZ_ACT_LOG/" type="parquet" />
+	<transactions>
+	</transactions>
+</channel>
