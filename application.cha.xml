@@ -1,0 +1,1316 @@
+<channel>
+	<source name="BZ_ACT_LOG" path="/emr_data/base/BASE_BZ_ACT_LOG/" type="parquet" />
+	<source name="BZ_DOC_LOG" path="/emr_data/base/BASE_BZ_DOC_LOG/" type="parquet" />
+	<source name="BZ_MASTER_CODES" path="/emr_data/base/BASE_BZ_MASTER_CODES/" type="parquet" />
+	<!-- 收费项目目录 -->
+	<source name="CHARGE_ITEM_DIRECTORY" path="/emr_data/base/BASE_CHARGE_ITEM_DIRECTORY/" type="parquet" />
+	<!-- 血型 -->
+	<source name="DIM_BLOOD_TYPE" path="/emr_data/base/BASE_DIM_BLOOD_TYPE/" type="parquet" />
+	<!-- 部门表 -->
+	<source name="DIM_DEPARTMENT" path="/emr_data/base/BASE_DIM_DEPARTMENT/" type="parquet" />
+	<!-- 出院方式 -->
+	<source name="DIM_DISCHARGE_METHOD" path="/emr_data/base/BASE_DIM_DISCHARGE_METHOD/" type="parquet" /> 
+	<!-- 性别 -->
+	<source name="DIM_GENDER" path="/emr_data/base/BASE_DIM_GENDER/" type="parquet" />
+	<!-- 入院方式 -->
+	<source name="DIM_HOSPITAL_ADMISSION_METHOD" path="/emr_data/base/BASE_DIM_HOSPITAL_ADMISSION_METHOD/" type="parquet" /> 
+	<!-- 婚姻状况 -->
+	<source name="DIM_MARRIAGE_TYPE" path="/emr_data/base/BASE_DIM_MARRIAGE_TYPE/" type="parquet" />
+	<!-- 医疗付款方式 -->
+	<source name="DIM_MEDICAL_PAYMENT_METHOD" path="/emr_data/base/BASE_DIM_MEDICAL_PAYMENT_METHOD/" type="parquet" /> 
+	<!-- 疾病编码分类 -->
+	<source name="DISEASE_CODING_CATEGORY" path="/emr_data/base/BASE_DISEASE_CODING_CATEGORY/" type="parquet" />
+	<!-- 疾病编码目录 -->
+	<source name="DISEASE_CODING_DIRECTORY" path="/emr_data/base/BASE_DISEASE_CODING_DIRECTORY/" type="parquet" />
+	<!-- 疾病诊断目录 -->
+	<source name="DISEASE_DIAGNOSIS_DIRECTORY" path="/emr_data/base/BASE_DISEASE_DIAGNOSIS_DIRECTORY/" type="parquet" />
+	<!-- 药品特性 -->
+	<source name="DRUG_PROPERTY" path="/emr_data/base/BASE_DRUG_PROPERTY/" type="parquet" />
+	<!-- 药品规格 -->
+	<source name="DRUG_SPECIFICATION" path="/emr_data/base/BASE_DRUG_SPECIFICATION/" type="parquet" />
+	<!-- 检验申请组合 -->
+	<source name="INSPECTION_APPLICATION_COMBINATION" path="/emr_data/base/BASE_INSPECTION_APPLICATION_COMBINATION/" type="parquet" />
+	<!-- 检验组合项目 -->
+	<source name="INSPECTION_COMBINATION_PROJECT" path="/emr_data/base/BASE_INSPECTION_COMBINATION_PROJECT/" type="parquet" />
+	<!-- 检验指标 -->
+	<source name="INSPECTION_INDICATOR" path="/emr_data/base/BASE_INSPECTION_INDICATOR/" type="parquet" />
+	<!-- 检验操作日志 -->
+	<!-- <source name="INSPECTION_OPERATION_LOG" path="/emr_data/base/BASE_INSPECTION_OPERATION_LOG/" type="parquet" /> -->
+	<!-- 检验报告明细 -->
+	<source name="INSPECTION_REPORT_DETAIL" path="/emr_data/base/BASE_INSPECTION_REPORT_DETAIL/" type="parquet" />
+	<!-- 检验报告记录 -->
+	<source name="INSPECTION_REPORT_RECORD" path="/emr_data/base/BASE_INSPECTION_REPORT_RECORD/" type="parquet" />
+	<!-- 病历单据应用 -->
+	<source name="MEDICAL_RECORD_APPLICATION" path="/emr_data/base/BASE_MEDICAL_RECORD_APPLICATION/" type="parquet" />
+	<!-- 病历文件列表 -->
+	<source name="MEDICAL_RECORD_FILE_LIST" path="/emr_data/base/BASE_MEDICAL_RECORD_FILE_LIST/" type="parquet" />
+	<!-- 病案主页 -->
+	<source name="PATIENT_CASE_HOMEPAGE" path="/emr_data/base/BASE_PATIENT_CASE_HOMEPAGE/" type="parquet" />
+	<!-- 病人诊断医嘱 -->
+	<source name="PATIENT_DIAGNOSIS_ORDER" path="/emr_data/base/BASE_PATIENT_DIAGNOSIS_ORDER/" type="parquet" />
+	<!-- 病人诊断记录 -->
+	<source name="PATIENT_DIAGNOSIS_RECORD" path="/emr_data/base/BASE_PATIENT_DIAGNOSIS_RECORD/" type="parquet" />
+	<!-- 病人信息 -->
+	<source name="PATIENT_INFORMATION" path="/emr_data/base/BASE_PATIENT_INFORMATION/" type="parquet" />
+	<!-- 病人医嘱记录 -->
+	<source name="PATIENT_ORDER_RECORD" path="/emr_data/base/BASE_PATIENT_ORDER_RECORD/" type="parquet" />
+	<!-- 病人医嘱报告 -->
+	<source name="PATIENT_ORDER_REPORT" path="/emr_data/base/BASE_PATIENT_ORDER_REPORT/" type="parquet" />
+	<!-- 病人挂号记录 -->
+	<source name="PATIENT_REGISTRATION_RECORD" path="/emr_data/base/BASE_PATIENT_REGISTRATION_RECORD/" type="parquet" />
+	<!-- RIS检查预约 -->
+	<!-- <source name="RIS_CHECK_APPOINTMENT" path="/emr_data/base/BASE_RIS_CHECK_APPOINTMENT/" type="parquet" /> -->
+	<!-- 诊疗项目目录 -->
+	<source name="TREATMENT_ITEM_DIRECTORY" path="/emr_data/base/BASE_TREATMENT_ITEM_DIRECTORY/" type="parquet" />
+	<!-- ZL_影像报告记录 -->
+	<source name="ZL_IMAGE_REPORT_RECORD" path="/emr_data/base/BASE_ZL_IMAGE_REPORT_RECORD/" type="parquet" />
+	<!-- 病人医嘱发送 -->
+	<source name="PATIENT_ORDER_SEND" path="/emr_data/base/BASE_PATIENT_ORDER_SEND/" type="parquet" />	
+	<!-- 电子病历内容 -->
+	<source name="MEDICAL_RECORD_CONTENT" path="/emr_data/base/BASE_MEDICAL_RECORD_CONTENT/" type="parquet" />	
+	<!-- 影像检查记录 -->
+	<source name="IMAGE_INSPECTION_RECORD" path="/emr_data/base/BASE_IMAGE_INSPECTION_RECORD/" type="parquet" />	
+	<!-- 影像设备目录 -->
+	<source name="IMAGE_EQUIPMENT_DIRECTORY" path="/emr_data/base/BASE_IMAGE_EQUIPMENT_DIRECTORY/" type="parquet" />
+	<!-- 心电报告记录 -->
+	<source name="XXZX_ECG_REPORT_RECORD" path="/emr_data/base/BASE_XXZX_ECG_REPORT_RECORD/" type="parquet" />
+	<!-- 病人过敏纪录 -->
+	<source name="PATIENT_ALLERGY_RECORD" path="/emr_data/base/BASE_PATIENT_ALLERGY_RECORD/" type="parquet" />
+	<!-- 病案主页从表 -->
+	<source name="PATIENT_CASE_HOMEPAGE_SLAVETABLE" path="/emr_data/base/BASE_PATIENT_CASE_HOMEPAGE_SLAVETABLE/" type="parquet" />
+	<!-- 病人临床路径 -->
+	<source name="PATIENT_CLINIC_PATH" path="/emr_data/base/BASE_PATIENT_CLINIC_PATH/" type="parquet" />
+	<!-- 手麻记录 -->
+	<source name="PATIENT_HAND_PARALYSIS_RECORD" path="/emr_data/base/BASE_PATIENT_HAND_PARALYSIS_RECORD/" type="parquet" />
+	
+	<udf name="getemrinfo" class="com.eking.graph.GetEmrInfoBak20180817" />
+
+	<transactions>
+
+	<!-- 病人基本信息 -->
+	<transaction type="sql" name="app_emr_person_step1" persistent="true"> <![CDATA[
+		select distinct
+		  a.BRID as hospitalPersonId                 -- 病人ID
+		, a.JKH as healthNumber                      -- 健康号
+		, a.XM as name                               -- 姓名
+		, a.XB as sex                                -- 性别
+		, a.CSRQ as birthday                         -- 出生日期
+		, bb.NL as age                               -- 年龄
+		, concat(' ', bb.GMC) as maritalStatus       -- 婚姻状况名称
+		, concat(' ', bb.IBM) as bloodType           -- 血型编码
+		, case when a.SFZH is null or a.SFZH = '' then '' else a.SFZH end as idNumber       -- 身份证号
+		, case when a.SFZH is null or a.SFZH = '' then a.BRID else a.SFZH end as pmiNo      -- 人口主索引NO
+		, case when a.MZ is null or a.MZ = '' then '-' else a.MZ end as nation              -- 民族
+		, case when bb.ZY is null or bb.ZY = '' then '-' else bb.ZY end as job                             -- 职业
+		, case when bb.HKDZ is null or bb.HKDZ = '' then '-' else bb.HKDZ end as registeredAddress         -- 户口地址
+		, case when bb.HKDZYB is null or bb.HKDZYB = '' then '-' else bb.HKDZYB end as registeredPostcode  -- 户口地址邮编
+		, case when bb.JTDZ is null or bb.JTDZ = '' then '-' else bb.JTDZ end as homeAddress               -- 家庭地址
+		, case when bb.JTDH is null or bb.JTDH = '' then '-' else bb.JTDH end as homePhone                 -- 家庭电话
+		, case when bb.JTDZYB is null or bb.JTDZYB = '' then '-' else bb.JTDZYB end as homePostcode        -- 家庭地址邮编
+		, case when bb.DWDZ is null or bb.DWDZ = '' then '-' else bb.DWDZ end as companyAddress            -- 单位地址
+		, case when bb.LXRXM is null or bb.LXRXM = '' then '-' else bb.LXRXM end as contactName            -- 联系人姓名
+		, case when bb.LXRGX is null or bb.LXRGX = '' then '-' else bb.LXRGX end as contactRelation        -- 联系人关系
+		, case when bb.LXRDH is null or bb.LXRDH = '' then '-' else bb.LXRDH end as contactPhone           -- 联系人电话
+		, case when bb.LXRDZ is null or bb.LXRDZ = '' then '-' else bb.LXRDZ end as contactAddress         -- 联系人地址
+		from PATIENT_INFORMATION a
+		left join
+		(
+			select distinct
+			  b.*
+			, g.MC as GMC   -- 婚姻状态名称
+			, i.BM as IBM   -- 血型编码
+			from PATIENT_CASE_HOMEPAGE b
+			left join DIM_MARRIAGE_TYPE g on b.HYZK = g.MC
+			left join DIM_BLOOD_TYPE i on b.XX = i.MC
+			where b.BRID is not null and b.BRID <> ''
+		) bb on a.BRID = bb.BRID
+		where a.BRID is not null and a.BRID <> ''
+		]]> 
+	</transaction>
+	<transaction type="sql" name="app_emr_person_step2" persistent="true">
+		select distinct
+		  cast(a.hospitalPersonId as int) as hospitalPersonId  <!-- 病人ID -->
+		, a.healthNumber                    <!-- 健康号 -->
+		, a.name                            <!-- 姓名 -->
+		, a.sex                             <!-- 性别 -->
+		, cast(unix_timestamp(a.birthday,'yyyy/MM/dd HH:mm:ss') as timestamp) as birthday  <!-- 出生日期 -->
+		, a.age                             <!-- 年龄 -->
+		, a.maritalStatus                   <!-- 婚姻状况名称 -->
+		, a.bloodType                       <!-- 血型编码 -->
+		, a.idNumber                        <!-- 身份证号 -->
+		, a.pmiNo                           <!-- 人口主索引NO -->
+		, a.nation                          <!-- 民族 -->
+		, a.job                             <!-- 职业 -->
+		, a.registeredAddress               <!-- 户口地址 -->
+		, a.registeredPostcode              <!-- 户口地址邮编 -->
+		, a.homeAddress                     <!-- 家庭地址 -->
+		, a.homePhone                       <!-- 家庭电话 -->
+		, a.homePostcode                    <!-- 家庭地址邮编 -->
+		, a.companyAddress                  <!-- 单位地址 -->
+		, a.contactName                     <!-- 联系人姓名 -->
+		, a.contactRelation                 <!-- 联系人关系 -->
+		, a.contactPhone                    <!-- 联系人电话 -->
+		, a.contactAddress                  <!-- 联系人地址 -->
+		, 'HN001' as hospitalId             <!-- 数据来源医院编号 -->
+		, '海南省人民医院' as hospitalName  <!-- 数据来源医院名称 -->
+		, '1' as isActive                   <!-- 是否有效 -->
+		, now() as createTime               <!-- 创建时间 -->
+		, now() as defaultTime              <!-- 默认时间 -->
+		from app_emr_person_step1 a
+	</transaction>
+	
+	<!-- 医疗事件 -->
+	<transaction type="sql" name="app_emr_event_step1" persistent="true"> <![CDATA[
+		select distinct
+		  case when c.SFZH is null or c.SFZH = '' then a.BRID else c.SFZH end as pmiNo  -- 人口主索引NO
+		, a.BRID as hospitalPersonId                   -- 病人ID
+		, a.ID as hospitalFolderNo                     -- ID
+		, a.NO as hospitalFolderId                     -- NO
+		, a.ZXBMID as departmentId                     -- 执行部门ID
+		, b.MC as departmentName                       -- 执行部门名称
+		, a.ZXR as doctor                              -- 执行人
+		, a.DJSJ as recordTime                         -- 登记时间
+		, a.FSSJ as beginTime                          -- 发生时间
+		, a.WCSJ as endTime                            -- 完成时间
+		, 'outpatient' as operType                     -- 类型：门诊
+		from PATIENT_REGISTRATION_RECORD a
+		join DIM_DEPARTMENT b on b.ID = a.ZXBMID
+		join PATIENT_INFORMATION c on c.BRID = a.BRID
+		where a.ZXSJ is not null and a.ZXSJ <> ''      -- 执行时间不为空
+		and a.WCSJ is not null and a.WCSJ <> ''        -- 完成时间不为空
+		and a.BRID is not null and a.BRID <> ''        -- 病人ID不为空
+		]]> 
+	</transaction>
+	<transaction type="sql" name="app_emr_event_step2" persistent="true">
+		select distinct
+		  case when c.SFZH is null or c.SFZH = '' then a.BRID else c.SFZH end as pmiNo  <!-- 人口主索引NO -->
+		, a.BRID as hospitalPersonId                   <!-- 病人ID -->
+		, a.ZYH as hospitalFolderNo                    <!-- 住院号 -->
+		, a.ZYID as hospitalFolderId                   <!-- 主页ID -->
+		, a.RYKSID as departmentId                     <!-- 入院科室ID -->
+		, b.MC as departmentName                       <!-- 入院科室名称 -->
+		, a.ZYYS as doctor                             <!-- 住院医师 -->
+		, a.DJSJ as recordTime                         <!-- 登记时间 -->
+		, a.RYRQ as beginTime                          <!-- 入院日期 -->
+		, a.CYRQ as endTime                            <!-- 出院日期 -->
+		, 'hospitalized' as operType                   <!-- 类型：住院 -->
+		from PATIENT_CASE_HOMEPAGE a
+		join DIM_DEPARTMENT b on b.ID = a.RYKSID
+		join PATIENT_INFORMATION c on c.BRID = a.BRID
+	</transaction>
+	<transaction type="sql" name="app_emr_event_step3" persistent="true">
+		select distinct
+		  md5(concat(nvl(t.hospitalFolderId, 0), nvl(t.hospitalFolderNo, 0), nvl(t.hospitalPersonId, 0))) as eventId
+		, t.pmiNo
+		, cast(t.hospitalPersonId as int) as hospitalPersonId
+		, t.hospitalFolderNo
+		, t.hospitalFolderId
+		, cast(t.departmentId as int) departmentId
+		, t.departmentName
+		, t.doctor
+		, cast(unix_timestamp(t.recordTime,'yyyy/MM/dd HH:mm:ss') as timestamp) as recordTime
+		, cast(unix_timestamp(t.beginTime,'yyyy/MM/dd HH:mm:ss') as timestamp) as beginTime
+		, cast(unix_timestamp(t.endTime,'yyyy/MM/dd HH:mm:ss') as timestamp) as endTime
+		, t.operType
+		, 'HN001' as hospitalId
+		, '海南省人民医院' as hospitalName
+		, '1' as isActive
+		, now() as createTime
+		, now() as defaultTime
+		from
+		(
+			select * from app_emr_event_step1
+			union all
+			select * from app_emr_event_step2
+		) t 
+	</transaction>	
+
+	<!-- 医嘱 -->
+	<transaction type="sql" name="app_emr_order_step1" persistent="true"> <![CDATA[
+		select distinct
+		  cast(a.ID as int) as orderId                   -- 医嘱ID
+		, cast(a.BRID as int) as hospitalPersonId        -- 病人ID
+		, case when a.GHD is null or a.GHD = '' then a.ZYID else a.GHD end as hospitalFolderId  -- 主页ID
+		, cast(a.XGID as int) as relevantOrderId         -- 相关ID（父级医嘱ID）
+		, cast(a.XH as int) as sequenceNumber            -- 序号
+		, case when a.YE is null or a.YE = '' then '0' else a.YE end as babyId  -- 婴儿
+		, cast(a.YZZT as int) as orderState              -- 医嘱状态ID
+		, case when a.YZZT = '1' then '新开'
+				when a.YZZT = '2' then '疑问'
+				when a.YZZT = '3' then '校对'
+				when a.YZZT = '4' then '作废'
+				when a.YZZT = '5' then '重整'
+				when a.YZZT = '6' then '暂停'
+				when a.YZZT = '7' then '启用'
+				when a.YZZT = '8' then '停止'
+				when a.YZZT = '9' then '确认停止' end as state  -- 医嘱状态
+		, case when a.ZLLB is null or a.ZLLB = '' then '*' else a.ZLLB end as diagnosisType  -- 诊疗类别
+		, b.CZLX as operType                             -- 操作类型
+		, c.DLFL as toxicologyClassification             -- 毒理分类
+		, cast(a.JJBZ as int) as urgentFlag              -- 紧急标志
+		, a.SCJG as reviewResults                        -- 审查结果
+		, case when a.YZQX = '0' or a.YZQX is null or a.YZQX = '' then '长嘱'
+				else '临嘱' end as expirationDate         -- 医嘱期效
+		, a.KSZXSJ as beginDate                           -- 开始执行时间
+		, a.ZXZZSJ as endDate                             -- 执行终止时间
+		, a.YZNR as orderContent                          -- 医嘱内容
+		, a.PSJG as skinTestResult                        -- 皮试结果
+		, case when a.ZGYL is null or a.ZGYL = '' then ''
+				when a.ZGYL is not null and a.ZGYL <> '' and a.ZLLB = 'E' and b.CZLX = '4' then concat(a.ZGYL, '付')
+				when a.ZGYL is not null and a.ZGYL <> '' and a.ZLLB = 'E' and b.CZLX <> '4' then concat(a.ZGYL, b.JSDW)
+				when a.ZGYL is not null and a.ZGYL <> '' and a.ZLLB = '4' then concat(a.ZGYL, g.JSDW)
+				when a.ZGYL is not null and a.ZGYL <> '' and a.ZLLB = '5' then concat(round(a.ZGYL / d.ZYBZ, 5), d.ZYDW)
+				when a.ZGYL is not null and a.ZGYL <> '' and a.ZLLB = '6' then concat(round(a.ZGYL / d.ZYBZ, 5), d.ZYDW)
+				else concat(a.ZGYL, b.JSDW) end as totalVolume   -- 总给予量
+		, concat(case when a.SCYL is null or a.SCYL = '' then ''
+						when a.SCYL is not null and a.SCYL <> '' and a.ZLLB = '4' then concat(a.SCYL, g.JSDW, ':')
+						when a.SCYL is not null and a.SCYL <> '' and a.ZLLB <> '4' then concat(a.SCYL, b.JSDW, ':') end,
+				 case when a.DCYL is null or a.DCYL = '' then ''
+				 		when a.DCYL is not null and a.DCYL <> '' and sign(1 - a.DCYL) = 1 then concat('0', a.DCYL)
+				 		when a.DCYL is not null and a.DCYL <> '' and sign(1 - a.DCYL) <> 1 then a.DCYL end,
+				 case when a.ZLLB = '4' then g.JSDW else b.JSDW end
+				) as singleVolume                        -- 单次用量
+		, b.JSDW as singleVolumeUnit                     -- 计算单位
+		, a.TS as duration                               -- 天数
+		, a.ZXPC as executionFrequency                   -- 执行频次
+		, case when a.ZLLB = 'E' then case when instr('2468', case when b.CZLX is null or b.CZLX = '' then '0' else b.CZLX end) = '0' then '' else b.MC end
+				else '' end as usage                     --
+		, a.YSZT as doctorEntrust                        -- 医生嘱托
+		, a.ZXSJFA as executDate                         -- 执行时间方案
+		, case when e.MC is null or e.MC = '' then case when a.ZXXZ is null or a.ZXXZ = '' or a.ZXXZ = '0' then '<叮嘱>' when a.ZXXZ = '5' then '<院外执行>' else '' end
+				else e.MC end as executDepartment        -- 执行部门
+		, case when instr('567E', case when a.ZLLB is null or a.ZLLB = '' then '*' else a.ZLLB end) = '0' then '' else a.ZXXZ end as executNature  --执行性质
+		, a.SCZXSJ as preExecutDate                      -- 上次执行时间
+		, a.KZYS as orderDoctor                          -- 开嘱医生
+		, a.KZSJ as orderDate                            -- 开嘱时间
+		, a.JDHS as proofreadingNurse                    -- 校对护士
+		, a.JDSJ as proofreadingDate                     -- 校对时间
+		, a.TZYS as stopOrderDoctor                      -- 停嘱医生
+		, a.TZSJ as stopOrderDate                        -- 停嘱时间
+		, a.CLSM as overdoseExplanation                  -- 超量说明
+		, a.QRTZHS as stopOrderNurse                     -- 确认停嘱护士
+		, a.QRTZSJ as confirmStopOrderDate               -- 确认停嘱时间
+		, cast(a.ZLXMID as int) as diagnosisItemId       -- 诊疗项目ID
+		, b.SGBM as cuvetteCode                          -- 试管编码
+		, cast(a.ZXBJ as int) as executFlag              -- 执行标记
+		, a.PBDY as closePrint                           -- 屏蔽打印
+		, a.QTID as preOrderId                           -- 前提ID
+		, case when a.XKQMID is not null and a.XKQMID <> '' then '1' else '0' end as isSign  -- 签名
+		, cast(mn.BLWJID as int) as emrFileId            -- 病历文件ID
+		, case when mn.TY is null or mn.TY = '' then '0' else mn.TY end as reportItem  -- 通用
+		, cast(a.SFXMID as int) as chargeItemId          -- 收费细目ID
+		, cast(a.KZKSID as int) as orderDepartmentId     -- 开嘱科室ID
+		, a.SQXH as requestSequence                      -- 申请序号
+		, a.SHZT as verifyState                          -- 审核状态
+		, a.SHBJ as verifyFlag                           -- 审核标记
+		, case when d.JBYW is not null and d.JBYW <> '' then '1' else '0' end as essentialDrug  -- 基本药物
+		, d.GWYP as highRiskDrug                         -- 高危药品
+		, a.BBBW as specimenSite                         -- 标本部位
+		, a.YYMD as drugPurpose                          -- 用药目的
+		, '1' as isActive
+		, now() as createTime
+		, now() as defaultTime
+		from PATIENT_ORDER_RECORD a
+		left join TREATMENT_ITEM_DIRECTORY b on a.ZLXMID = b.ID
+		left join DRUG_PROPERTY c on a.ZLXMID = c.YMID
+		left join DRUG_SPECIFICATION d on a.SFXMID = d.YPID
+		left join DIM_DEPARTMENT e on a.ZXKSID = e.ID
+		left join CHARGE_ITEM_DIRECTORY g on a.SFXMID = g.ID
+		left join 
+		(
+			select distinct
+			  m.ZLXMID
+			, m.BLWJID
+			, n.TY
+			from MEDICAL_RECORD_APPLICATION m
+			left join MEDICAL_RECORD_FILE_LIST n on m.BLWJID = n.ID and n.ZHONGL = '7'
+			where m.YYCH = '2'
+		) mn on a.ZLXMID = mn.ZLXMID
+		where (NOT (a.ZLLB IN ('D', 'E', 'F', 'G') and a.XGID is not null and a.XGID <> '') or a.ZLLB = 'E' and b.CZLX = '8')
+		and a.KSZXSJ is not null and a.KSZXSJ <> ''
+		and a.BRLY <> '3'
+		and (a.YZQX = '0' or a.YZQX is null or a.YZQX = '')  --长嘱
+		and (a.YE is null or a.YE = '' or a.YE = '0')
+		and (a.YZZT is null or a.YZZT = '' or a.YZZT <> '-1' or a.YZZT <> '4')  --医嘱状态为4表示作废
+		]]> 
+	</transaction>
+	<transaction type="sql" name="app_emr_order_step2" persistent="true"> <![CDATA[
+		select distinct
+		  cast(a.ID as int) as orderId                   -- 医嘱ID
+		, cast(a.BRID as int) as hospitalPersonId        -- 病人ID
+		, case when a.GHD is null or a.GHD = '' then a.ZYID else a.GHD end as hospitalFolderId  -- 主页ID
+		, cast(a.XGID as int) as relevantOrderId         -- 相关ID（父级医嘱ID）
+		, cast(a.XH as int) as sequenceNumber            -- 序号
+		, case when a.YE is null or a.YE = '' then '0' else a.YE end as babyId  -- 婴儿
+		, cast(a.YZZT as int) as orderState              -- 医嘱状态ID
+		, case when a.YZZT = '1' then '新开'
+				when a.YZZT = '2' then '疑问'
+				when a.YZZT = '3' then '校对'
+				when a.YZZT = '4' then '作废'
+				when a.YZZT = '5' then '重整'
+				when a.YZZT = '6' then '暂停'
+				when a.YZZT = '7' then '启用'
+				when a.YZZT = '8' then '停止'
+				when a.YZZT = '9' then '确认停止' end as state  -- 医嘱状态
+		, case when a.ZLLB is null or a.ZLLB = '' then '*' else a.ZLLB end as diagnosisType  -- 诊疗类别
+		, b.CZLX as operType                             -- 操作类型
+		, c.DLFL as toxicologyClassification             -- 毒理分类
+		, cast(a.JJBZ as int) as urgentFlag              -- 紧急标志
+		, a.SCJG as reviewResults                        -- 审查结果
+		, case when a.YZQX = '0' or a.YZQX is null or a.YZQX = '' then '长嘱'
+				else '临嘱' end as expirationDate         -- 医嘱期效
+		, a.KSZXSJ as beginDate                           -- 开始执行时间
+		, a.ZXZZSJ as endDate                             -- 执行终止时间
+		, a.YZNR as orderContent                          -- 医嘱内容
+		, a.PSJG as skinTestResult                        -- 皮试结果
+		, case when a.ZGYL is null or a.ZGYL = '' then ''
+				when a.ZGYL is not null and a.ZGYL <> '' and a.ZLLB = 'E' and b.CZLX = '4' then concat(a.ZGYL, '付')
+				when a.ZGYL is not null and a.ZGYL <> '' and a.ZLLB = 'E' and b.CZLX <> '4' then concat(a.ZGYL, b.JSDW)
+				when a.ZGYL is not null and a.ZGYL <> '' and a.ZLLB = '4' then concat(a.ZGYL, g.JSDW)
+				when a.ZGYL is not null and a.ZGYL <> '' and a.ZLLB = '5' then concat(round(a.ZGYL / d.MZBZ, 5), d.MZDW)
+				when a.ZGYL is not null and a.ZGYL <> '' and a.ZLLB = '6' then concat(round(a.ZGYL / d.MZBZ, 5), d.MZDW)
+				else concat(a.ZGYL, b.JSDW) end as totalVolume   -- 总给予量
+		, case when a.DCYL is null or a.DCYL = '' then ''
+				when a.DCYL is not null and a.DCYL <> '' and a.ZLLB = '4' then g.JSDW
+				when a.DCYL is not null and a.DCYL <> '' and a.ZLLB <> '4' then b.JSDW end as singleVolume   -- 单次用量
+		, b.JSDW as singleVolumeUnit                     -- 计算单位
+		, a.TS as duration                               -- 天数
+		, a.ZXPC as executionFrequency                   -- 执行频次
+		, case when a.ZLLB = 'E' then case when instr('2468', case when b.CZLX is null or b.CZLX = '' then '0' else b.CZLX end) = '0' then '' else b.MC end
+				else '' end as usage                     --
+		, a.YSZT as doctorEntrust                        -- 医生嘱托
+		, a.ZXSJFA as executDate                         -- 执行时间方案
+		, case when e.MC is null or e.MC = '' then case when a.ZXXZ is null or a.ZXXZ = '' or a.ZXXZ = '0' then '<叮嘱>' when a.ZXXZ = '5' then '<院外执行>' else '' end
+				else e.MC end as executDepartment        -- 执行部门
+		, case when instr('567E', case when a.ZLLB is null or a.ZLLB = '' then '*' else a.ZLLB end) = '0' then '' else a.ZXXZ end as executNature  --执行性质
+		, a.SCZXSJ as preExecutDate                      -- 上次执行时间
+		, a.KZYS as orderDoctor                          -- 开嘱医生
+		, a.KZSJ as orderDate                            -- 开嘱时间
+		, a.JDHS as proofreadingNurse                    -- 校对护士
+		, a.JDSJ as proofreadingDate                     -- 校对时间
+		, a.TZYS as stopOrderDoctor                      -- 停嘱医生
+		, a.TZSJ as stopOrderDate                        -- 停嘱时间
+		, a.CLSM as overdoseExplanation                  -- 超量说明
+		, a.QRTZHS as stopOrderNurse                     -- 确认停嘱护士
+		, a.QRTZSJ as confirmStopOrderDate               -- 确认停嘱时间
+		, cast(a.ZLXMID as int) as diagnosisItemId       -- 诊疗项目ID
+		, b.SGBM as cuvetteCode                          -- 试管编码
+		, cast(a.ZXBJ as int) as executFlag              -- 执行标记
+		, a.PBDY as closePrint                           -- 屏蔽打印
+		, a.QTID as preOrderId                           -- 前提ID
+		, case when a.XKQMID is not null and a.XKQMID <> '' then '1' else '0' end as isSign  -- 签名
+		, cast(mn.BLWJID as int) as emrFileId            -- 病历文件ID
+		, case when mn.TY is null or mn.TY = '' then '0' else mn.TY end as reportItem  -- 通用
+		, cast(a.SFXMID as int) as chargeItemId          -- 收费细目ID
+		, cast(a.KZKSID as int) as orderDepartmentId     -- 开嘱科室ID
+		, a.SQXH as requestSequence                      -- 申请序号
+		, a.SHZT as verifyState                          -- 审核状态
+		, a.SHBJ as verifyFlag                           -- 审核标记
+		, case when d.JBYW is not null and d.JBYW <> '' then '1' else '0' end as essentialDrug  -- 基本药物
+		, d.GWYP as highRiskDrug                         -- 高危药品
+		, a.BBBW as specimenSite                         -- 标本部位
+		, a.YYMD as drugPurpose                          -- 用药目的
+		, '1' as isActive
+		, now() as createTime
+		, now() as defaultTime
+		from PATIENT_ORDER_RECORD a
+		left join TREATMENT_ITEM_DIRECTORY b on a.ZLXMID = b.ID
+		left join DRUG_PROPERTY c on a.ZLXMID = c.YMID
+		left join DRUG_SPECIFICATION d on a.SFXMID = d.YPID
+		left join DIM_DEPARTMENT e on a.ZXKSID = e.ID
+		left join CHARGE_ITEM_DIRECTORY g on a.SFXMID = g.ID
+		left join 
+		(
+			select distinct
+			  m.ZLXMID
+			, m.BLWJID
+			, n.TY
+			from MEDICAL_RECORD_APPLICATION m
+			left join MEDICAL_RECORD_FILE_LIST n on m.BLWJID = n.ID and n.ZHONGL = '7'
+			where m.YYCH = '1'
+		) mn on a.ZLXMID = mn.ZLXMID
+		where (NOT (a.ZLLB IN ('D', 'E', 'F', 'G') and a.XGID is not null and a.XGID <> '') or a.ZLLB = 'E' and b.CZLX = '8')
+		and a.KSZXSJ is not null and a.KSZXSJ <> ''
+		and a.BRLY <> '3'
+		and a.YZQX = '1'  --临嘱
+		and a.YZZT <> '4'  --医嘱状态为4表示作废
+		]]> 
+	</transaction>
+	<transaction type="sql" name="app_emr_order_step3" persistent="true">
+		select distinct
+		  t2.eventId as hospitalFileId
+		, t1.*
+		from 
+		(
+			select * from app_emr_order_step1
+			union all
+			select * from app_emr_order_step2
+		) t1
+		join app_emr_event_step3 t2 on t2.hospitalPersonId = t1.hospitalPersonId and t2.hospitalFolderId = t1.hospitalFolderId
+	</transaction>
+
+	<!-- 筛选能关联到医嘱信息的事件数据 -->
+	<transaction type="sql" name="app_emr_event_step4" persistent="true">
+		select t1.*
+		from app_emr_event_step3 t1
+		where exists
+		(
+			select 1
+			from app_emr_order_step3 t2
+			where t2.hospitalFileId = t1.eventId
+		)
+	</transaction>
+
+	<!-- 检验项目 -->
+	<transaction type="sql" name="app_emr_medical_examination_step1" persistent="true"> <![CDATA[
+		select distinct
+		  a.HISBRID as hospitalPersonId                -- HIS病人ID
+		, case when a.GHD is null or a.GHD = '' then a.ZYID else a.GHD end as hospitalFolderId
+		, a.ID as examinationId                        -- ID
+		, 0 as examinationChoise                       -- 选择
+		, a.XM as name                                 -- 姓名
+		, case when a.XB = '1' then '男'
+				when a.XB = '2' then '女'
+				when a.XB = '9' then '未知'
+				else '' end as sex                     -- 性别
+		, a.NL as age                                  -- 年龄
+		, case when a.SHR is null or a.SHR = '' then '未出' else '已出' end as examinationReport  -- 审核人
+		, case when (a.DYCS is null or a.DYCS = '') 
+					and (a.YSZDY is null or a.YSZDY = '') 
+					and (a.ZZDYCS is null or a.ZZDYCS = '') then 0 
+				else 1 end as print                    -- 打印次数
+		, a.ZYH as admissionNumber                     -- 住院号
+		, a.CH as bedNo                                -- 床号
+		, cast(unix_timestamp(a.HSSJ,'yyyy/MM/dd HH:mm:ss') as timestamp) as confirmDate   -- 核收时间
+		, cast(unix_timestamp(a.SHSJ,'yyyy/MM/dd HH:mm:ss') as timestamp) as verifyDate    -- 审核时间
+		, a.BZ as remarks                              -- 备注
+		, a.ZD as diagnosis                            -- 诊断
+		, a.WSW as microorganism                       -- 微生物
+		, a.YXBG as positiveResultReporter             -- 阳性报告
+		, a.JYR as checker                             -- 检验人
+		, a.SHR as verifier                            -- 审核人
+		, case when a.BRLY is null or a.BRLY = '' then '0' else a.BRLY end as patientFrom  -- 病人来源
+		, a.SQR as proposer                            -- 申请人
+		, cast(unix_timestamp(d.SQSJ,'yyyy/MM/dd HH:mm:ss') as timestamp) as requestDate   -- 申请时间
+		, d.FL as groupType                            -- 分类
+		, d.MC as inspectionItem                       -- 名称
+		, d.YZID as orderId                            -- 医嘱ID
+		, d.SQID as sourceId                           -- 申请ID(即父级医嘱ID)
+		, '1' as isActive
+		, now() as createTime
+		, now() as defaultTime
+		from INSPECTION_REPORT_RECORD a
+		join
+		(
+			select distinct
+			  b.BBID                                     -- 标本ID
+			, b.SQSJ                                     -- 申请时间
+			, b.YZID                                     -- 医嘱ID
+			, b.SQID                                     -- 申请ID(即父级医嘱ID)
+			, c.MC                                       -- 名称
+			, c.FL                                       -- 分类
+			from INSPECTION_APPLICATION_COMBINATION b
+			left join INSPECTION_COMBINATION_PROJECT c on c.ID = b.ZHID
+			where b.BBID is not null and b.BBID <> ''
+		) d on a.ID = d.BBID
+		where a.SHR is not null and a.SHR <> ''
+		and (a.BRLY is null or a.BRLY = '' or a.BRLY in ('0', '1', '2', '3', '4'))
+		]]> 
+	</transaction>
+	<transaction type="sql" name="app_emr_medical_examination_step2" persistent="true">
+		select distinct
+		  t2.eventId as hospitalFileId
+		, t1.*
+		from app_emr_medical_examination_step1 t1
+		join app_emr_event_step4 t2 on t2.hospitalPersonId = t1.hospitalPersonId and t2.hospitalFolderId = t1.hospitalFolderId
+	</transaction>
+	
+	<!-- 检验明细 -->
+	<transaction type="sql" name="app_emr_medical_examination_step3" persistent="true"> <![CDATA[
+		select distinct
+		  a.ID as examinationId
+		, c.ID as quotaId
+		, b.ID as sourceId
+		, concat(c.ZWM, '(', c.YWM, ')') as examinationItem  -- 检验项目名称
+		, b.JYJG as examinationResult                  -- 检验结果
+		, b.SCJG as preExaminationResult               -- 上次结果
+		, c.DW as unit                                 -- 单位
+		, b.JGCK as referenceValue                     -- 结果参考
+		, a.SQLY as requestType                        -- 申请来源
+		, e.YZID as orderId                            -- 医嘱ID
+		, e.ZHID as groupId                            -- 组合ID
+		, d.BM as groupCode                            -- 编码
+		, d.MC as groupName                            -- 名称
+		, e.SFZT as chargeFlag                         -- 收费状态
+		, e.YSJE as amountReceivable                   -- 应收金额
+		, e.SSJE as realReceivable                     -- 实收金额
+		, b.CKGZ as referenceValueMax                  -- 参考高值
+		, b.CKDZ as referenceValueMin                  -- 参考低值
+		, c.PLXH as sequenceNumber                     -- 排列序号
+		, b.JYJG as logResults                         -- 检验结果
+		, e.ID as requestGroupId                       -- 
+		, b.JGBZ as resultFlag                         -- 结果标志
+		, b.OD as odValue                              -- OD值
+		, b.CUTOFF as cutoffValue                      -- CUTOFF值
+		, b.SCO as scoValue                            -- SCO值
+		, c.JGLX as resultType                         -- 结果类型
+		, c.JSGS as calculationFormula                 -- 计算公式
+		, c.ZBDM as quotaCode                          -- 指标代码
+		, c.XMLB as examinationItemType                -- 项目类别
+		, c.XSWS as decimalDigits                      -- 小数位数
+		, b.SCBZ as preSign                            -- 上次标志
+		, a.BRID as pid                                -- 病人ID
+		, a.HSSJ as confirmDate                        -- 核收时间
+		from INSPECTION_REPORT_DETAIL b
+		join INSPECTION_REPORT_RECORD a on a.ID = b.BBID
+		join INSPECTION_INDICATOR c on b.XMID = c.ID
+		join INSPECTION_APPLICATION_COMBINATION e on b.BBID = e.BBID and b.ZHID = e.ZHID and e.ZHID is not null and e.ZHID <> ''
+		left join INSPECTION_COMBINATION_PROJECT d on b.ZHID = d.ID
+		where b.ZHID is not null and b.ZHID <> ''
+		]]> 
+	</transaction>
+	<transaction type="sql" name="app_emr_medical_examination_step4" persistent="true"> <![CDATA[
+		select distinct
+		  a.ID as examinationId
+		, c.ID as quotaId
+		, b.id as sourceId
+		, concat(c.ZWM, '(', c.YWM, ')') as examinationItem  -- 检验项目名称
+		, b.JYJG as examinationResult                  -- 检验结果
+		, b.SCJG as preExaminationResult               -- 上次结果
+		, c.DW as unit                                 -- 单位
+		, b.JGCK as referenceValue                     -- 结果参考
+		, a.SQLY as requestType                        -- 申请来源
+		, e.YZID as orderId                            -- 医嘱ID
+		, e.ZHID as groupId                            -- 组合ID
+		, d.BM as groupCode                            -- 编码
+		, d.MC as groupName                            -- 名称
+		, e.SFZT as chargeFlag                         -- 收费状态
+		, e.YSJE as amountReceivable                   -- 应收金额
+		, e.SSJE as realReceivable                     -- 实收金额
+		, b.CKGZ as referenceValueMax                  -- 参考高值
+		, b.CKDZ as referenceValueMin                  -- 参考低值
+		, c.PLXH as sequenceNumber                     -- 排列序号
+		, b.JYJG as logResults                         -- 检验结果
+		, e.ID as requestGroupId                       -- 
+		, b.JGBZ as resultFlag                         -- 结果标志
+		, b.OD as odValue                              -- OD值
+		, b.CUTOFF as cutoffValue                      -- CUTOFF值
+		, b.SCO as scoValue                            -- SCO值
+		, c.JGLX as resultType                         -- 结果类型
+		, c.JSGS as calculationFormula                 -- 计算公式
+		, c.ZBDM as quotaCode                          -- 指标代码
+		, c.XMLB as examinationItemType                -- 项目类别
+		, c.XSWS as decimalDigits                      -- 小数位数
+		, b.SCBZ as preSign                            -- 上次标志
+		, a.BRID as pid                                -- 病人ID
+		, a.HSSJ as confirmDate                        -- 核收时间
+		from INSPECTION_REPORT_DETAIL b
+		join INSPECTION_REPORT_RECORD a on a.ID = b.BBID
+		join INSPECTION_INDICATOR c on b.XMID = c.ID
+		join INSPECTION_APPLICATION_COMBINATION e on b.BBID = e.BBID and (e.ZHID is null or e.ZHID = '')
+		left join INSPECTION_COMBINATION_PROJECT d on b.ZHID = d.ID
+		where b.ZHID is null or b.ZHID = ''
+		]]> 
+	</transaction>
+	<transaction type="sql" name="app_emr_medical_examination_step5" persistent="true">
+		select distinct
+		  t.examinationId
+		, t.orderId
+		, collect_set((t.quotaId, t.sourceId, t.examinationItem, t.examinationResult, t.preExaminationResult,
+			t.unit, t.referenceValue, t.requestType, t.orderId, t.groupId, 
+			t.groupCode, t.groupName, t.chargeFlag, t.amountReceivable, t.realReceivable, 
+			t.referenceValueMax, t.referenceValueMin, t.sequenceNumber, t.logResults, t.requestGroupId, 
+			t.resultFlag, t.odValue, t.cutoffValue, t.scoValue, t.resultType, 
+			t.calculationFormula, t.quotaCode, t.examinationItemType, t.decimalDigits, t.preSign, 
+			t.pid, t.confirmDate)) as emrMedicalExaminationDetails
+		from
+		(
+			select * from app_emr_medical_examination_step3
+			union all
+			select * from app_emr_medical_examination_step4
+		) t
+		group by t.examinationId, t.orderId
+	</transaction>
+	<transaction type="sql" name="app_emr_medical_examination_step6" persistent="true">
+		select distinct
+		  t1.*
+		, t2.emrMedicalExaminationDetails
+		from app_emr_medical_examination_step2 t1
+		left join app_emr_medical_examination_step5 t2 on t1.examinationId = t2.examinationId and t1.orderId = t2.orderId
+	</transaction>
+	
+	<!-- 检查 -->
+	<!--普通检查-->
+	<transaction type="sql" name="app_emr_check_step1" persistent="true">
+		select distinct
+		  cast(b.BRID as int) as hospitalPersonId      <!-- 病人ID -->
+		, case when b.ZYID is null or b.ZYID = '' then b.GHD else b.ZYID end as hospitalFolderId  <!-- 主页ID -->
+		, b.ID as orderId                              <!-- 医嘱ID -->
+		, cast(unix_timestamp(a.BGRQ,'yyyy/MM/dd HH:mm:ss') as timestamp) as reportTime  <!-- 报告日期 -->
+		, cast(a.SQID as int) as sourceId              <!-- 申请ID -->
+		, a.BGSJ as findings                           <!-- 报告所见 -->
+		, a.BGJY as propose                            <!-- 报告建议 -->
+		, a.BGYS as reportDoctor                       <!-- 报告医生 -->
+		, a.SHYS as verifier                           <!-- 审核医生 -->
+		, cast(a.GXBZ as int) as updateFlag            <!-- 更新标志 -->
+		, c.BM as itemCode                             <!-- 检查项目编码 -->
+		, c.MC as itemName                             <!-- 检查项目名称 -->
+		, '' as storagePath                            <!-- 存储路径 -->
+		, '' as reportImage                            <!-- 报告图像 -->
+		,'普通检查' as checkType     				   <!-- 检查类型 -->
+		, '1' as isActive
+		, now() as createTime
+		, now() as defaultTime
+		from ZL_IMAGE_REPORT_RECORD a
+		join PATIENT_ORDER_RECORD b on b.ID = a.SQID
+		join TREATMENT_ITEM_DIRECTORY c on b.ZLXMID = c.ID
+	</transaction>
+	<!--彩超检查-->
+	<transaction type="sql" name="app_emr_check_step2" persistent="true"> <![CDATA[
+		select distinct
+		  a.BLID
+		, a.YZID
+		from PATIENT_ORDER_REPORT a
+		join PATIENT_ORDER_SEND s on s.YZID = a.YZID
+		]]> 
+	</transaction>
+	<transaction type="sql" name="app_emr_check_step3" persistent="true"> <![CDATA[
+		select distinct
+		  g.YZID
+		, case when a.NRWB = '检查所见' then 'JCSJ'  --检查所见
+				when a.NRWB = '诊断意见' then 'ZDYJ'  --诊断意见
+				end as type
+		, regexp_replace(regexp_replace(regexp_replace(t.NRWB,'，',','),'；',';'),'：',':') as NRWB  --内容文本
+		from MEDICAL_RECORD_CONTENT a
+		join MEDICAL_RECORD_CONTENT t on a.ID = t.FID and t.ZZB = '0' and t.NRWB is not null and t.NRWB <> ''
+		join app_emr_check_step2 g on a.WJID = g.BLID
+		where (a.NRWB = '检查所见' or a.NRWB = '诊断意见')
+		and a.DXLX = '3'
+		]]> 
+	</transaction>
+	<transaction type="sql" name="app_emr_check_step4" persistent="true"> <![CDATA[
+		select distinct
+		  g.YZID
+		, substr(substr(a.DXSX,instr(a.DXSX, '1.')),0,instr(substr(a.DXSX,instr(a.DXSX,'1.')),'g')) as BGTX --报告图像
+		from MEDICAL_RECORD_CONTENT a
+		join app_emr_check_step2 g on a.WJID = g.BLID
+		where a.DXLX = '5'
+		and (a.DXXH is null or a.DXXH = '')
+		]]> 
+	</transaction>
+	<transaction type="sql" name="app_emr_check_step5" persistent="true"> <![CDATA[
+		select distinct
+		  tt.hospitalPersonId
+		, tt.hospitalFolderId
+		, tt.orderId
+		, tt.reportTime
+		, tt.sourceId
+		, tt.findings
+		, tt.propose
+		, tt.reportDoctor
+		, '' as verifier
+		, '' as updateFlag
+		, tt.itemCode
+		, tt.itemName
+		, tt.CCLJ as storagePath
+		, concat_ws(',',collect_set(tt.BGTX)) as reportImage
+		,'彩超检查' as checkType 
+		, '1' as isActive
+		, now() as createTime
+		, now() as defaultTime 
+		from 
+		(
+			select distinct
+			  cast(b.BRID as int) as hospitalPersonId
+			, case when b.ZYID is null or b.ZYID = '' then b.GHD end as hospitalFolderId
+			, b.ID as orderId
+			, cast(unix_timestamp(ta.JSRQ,'yyyy/MM/dd HH:mm:ss') as timestamp) as reportTime
+			, cast(ta.YZID as int) as sourceId
+			, c.NRWB as findings  --检查所见
+			, d.NRWB as propose   --诊断意见
+			, ta.BGR as reportDoctor
+			, k.BM as itemCode
+			--, k.MC as itemName
+			, b.YZNR as itemName  --检查部位
+			, concat('ftp://',n.IPDZ,'/',
+					n.FTPML,'/',
+					case when ta.JSRQ is null or ta.JSRQ = '' then '' 
+						when ta.JSRQ is not null and ta.JSRQ <> '' 
+						then concat(from_unixtime(unix_timestamp(ta.JSRQ, "yyyy/MM/dd HH:mm:ss"),"yyyymmdd"), '/') end,
+					ta.JCUID) as CCLJ --存储路径
+			, m.BGTX --报告图像
+			from 
+			(
+				select distinct a.YZID, t.JSRQ, t.BGR, t.WZY, t.JCUID
+				from PATIENT_ORDER_SEND a
+				left join IMAGE_INSPECTION_RECORD t on a.YZID = t.YZID
+				where t.BGR is not null and t.BGR <> ''
+			) ta,
+			PATIENT_ORDER_RECORD b,
+			app_emr_check_step3 c,
+			app_emr_check_step3 d,
+			DIM_DEPARTMENT e,
+			PATIENT_INFORMATION y,
+			TREATMENT_ITEM_DIRECTORY k,
+			app_emr_check_step4 m,
+			IMAGE_EQUIPMENT_DIRECTORY n
+			where ta.YZID = b.ID
+			and ta.YZID = c.YZID and c.type = 'JCSJ'
+			and ta.YZID = d.YZID and d.type = 'ZDYJ'
+			and ta.YZID = m.YZID
+			and ta.WZY = n.SBH
+			and b.BRKSID = e.ID
+			and b.BRID = y.BRID
+			and b.ZLXMID = k.ID
+			and c.YZID = d.YZID
+		) tt
+		group by 
+		tt.hospitalPersonId,
+		tt.hospitalFolderId,
+		tt.orderId,
+		tt.reportTime,
+		tt.sourceId,
+		tt.findings,
+		tt.propose,
+		tt.reportDoctor,
+		tt.itemCode,
+		tt.itemName,
+		tt.CCLJ
+		]]> 
+	</transaction>
+	<!--心电检查-->
+	<transaction type="sql" name="app_ECG_report_record" persistent="true">
+		select
+		  b.BRID as hospitalPersonId       <!-- 病人ID -->
+		, case when b.ZYID is null or b.ZYID = '' then b.GHD else b.ZYID end as hospitalFolderId  <!-- 主页ID -->
+		, b.ID as orderId                  <!-- 医嘱ID -->
+		, a.BGRQ as reportTime             <!-- 报告日期 -->
+		, a.SQID as sourceId               <!-- 申请ID -->
+		, a.BGSJ as findings               <!-- 报告所见 -->
+		, a.BGJY as propose                <!-- 报告建议 -->
+		, a.BGYS as reportDoctor           <!-- 报告医生 -->
+		, a.SHYS as verifier               <!-- 审核医生 -->
+		, a.GXBZ as updateFlag             <!-- 更新标志 -->
+		, c.BM as itemCode                 <!-- 检查项目编码 -->
+		, c.MC as itemName                 <!-- 检查项目名称 -->
+		, '' as storagePath                <!-- 存储路径 -->
+	    , '' as reportImage                <!-- 报告图像 -->
+	    , '心电检查' as checkType          <!-- 检查类型 -->
+	    , '1' as isActive
+	    , now() as createTime
+	    , now() as defaultTime   
+        from XXZX_ECG_REPORT_RECORD a 
+        join PATIENT_ORDER_RECORD b on a.SQID = b.ID
+	    join TREATMENT_ITEM_DIRECTORY c on b.ZLXMID = c.ID
+	</transaction>
+	<!--检查汇总-->	
+	<transaction type="sql" name="app_emr_check_step6" persistent="true">
+		select distinct t2.eventId as hospitalFileId, t1.*
+		from 
+		(
+			select * from app_emr_check_step1     <!--普通检查-->
+			union all
+			select * from app_emr_check_step5     <!--彩超检查-->
+			union all
+			select * from app_ECG_report_record   <!--心电检查-->
+		) t1
+		join app_emr_event_step4 t2 on t2.hospitalPersonId = t1.hospitalPersonId and t2.hospitalFolderId = t1.hospitalFolderId
+	</transaction>	
+
+	<!-- 诊断 -->
+	<transaction type="sql" name="app_emr_diagnostic_step1" persistent="true"> <![CDATA[
+		select distinct
+		  cast(a.ID as int) as diagnosticRecordId                     -- 诊断记录ID
+		, cast(a.BRID as int) as hospitalPersonId                     -- 病人ID
+		, case when f.NO is null or f.NO = '' then a.ZYID else f.NO end as hospitalFolderId  -- 主页ID
+		, a.YZID as ordersId                                          -- 医嘱ID
+		, cast(a.JLLY as int) as recordFrom                           -- 记录来源
+		, case when a.BMXH is null or a.BMXH = '' then '1' else a.BMXH end as codeSequence  -- 编码序号
+		, a.RYBQ as hospitalizationCondition                          -- 入院病情
+		, a.CYQK as dischargeSituation                                -- 出院情况
+		, a.ZDID as diagnosisId                                       -- 诊断ID
+		, c.BM as diagnosisCode                                       -- 诊断编码
+		, c.MC as diagnosisName                                       -- 诊断名称
+		, a.ZDMS as diagnosisDescription                              -- 诊断描述
+		, cast(a.ZDLX as int) as diagnosticType                       -- 诊断类型
+		, cast(a.ZDCX as int) as diagnosticArrangement                -- 诊断次序
+		, g.YZID as diagnosticOrderId                                 -- 诊断医嘱ID
+		, a.ZHID as syndromeId                                        -- 证候ID
+		, d.BM as syndromeCode                                        -- 症候编码
+		, d.MC as syndromeName                                        -- 症候名称
+		, cast(a.JBID as int) as diseaseId                            -- 疾病ID
+		, be.BM as diseaseCode                                        -- 疾病编码
+		, be.LB as diseaseType                                        -- 疾病类型
+		, be.MC as diseaseName                                        -- 疾病名称
+		, a.FBSJ as onsetDate                                         -- 发病时间
+		, cast(unix_timestamp(a.JLRQ,'yyyy/MM/dd HH:mm:ss') as timestamp) as recordDate  -- 记录日期
+		, a.JLR as recorder                                           -- 记录人
+		, a.BZ as remarks                                             -- 备注 
+		, be.XBXZ as sexRestriction                                   -- 性别限制
+		, be.LXXZ as curativeEffectRestriction                        -- 疗效限制
+		, be.FENM as childbirth                                       -- 分娩
+		, be.FUM as extracode                                         -- 附码
+		, cast(be.EID as int) as topClass                             -- 
+		, cast(be.SFBR as int) as isPatient                           -- 是否病人
+		, cast(a.SFWZ as int) as isEarlyTreatment                     -- 是否未治
+		, cast(a.SFYZ as int) as isSuspected                          -- 是否疑诊
+		, '1' as isActive
+		, now() as createTime
+		, now() as defaultTime     
+		from PATIENT_DIAGNOSIS_RECORD a
+		left join
+		(
+			select distinct
+			  b.MC
+			, b.BM
+			, b.LB
+			, b.XBXZ
+			, b.LXXZ
+			, b.FENM
+			, b.FUM
+			, b.ID as BID
+			, e.ID as EID
+			, e.SFBR
+			from DISEASE_CODING_DIRECTORY b
+			left join DISEASE_CODING_CATEGORY e on b.FLID = e.ID
+		) be on a.JBID = be.BID
+		left join DISEASE_DIAGNOSIS_DIRECTORY c on a.ZDID = c.ID
+		left join DISEASE_CODING_DIRECTORY d on a.ZHID = d.ID
+		left join PATIENT_REGISTRATION_RECORD f on a.ZYID = f.ID
+		left join
+		(
+			select distinct
+			  ZDID
+			, concat_ws(',', collect_set(YZID)) as YZID
+			from PATIENT_DIAGNOSIS_ORDER
+			group by ZDID
+		) g on g.ZDID = a.ID
+		and a.JLLY = '3'
+		and a.ZDLX in ('1', '2', '3', '5', '6', '7', '10', '21')
+		and (a.QXSJ is null or a.QXSJ = '')
+		and a.ZDMS is not null and a.ZDMS <> ''
+		]]> 
+	</transaction>
+	<transaction type="sql" name="app_emr_diagnostic_step2" persistent="true">
+		select distinct
+		  t2.eventId as hospitalFileId
+		, t1.*
+		from app_emr_diagnostic_step1 t1
+		join app_emr_event_step4 t2 on t2.hospitalPersonId = t1.hospitalPersonId and t2.hospitalFolderId = t1.hospitalFolderId
+	</transaction>
+
+	<!-- 住院病历 -->
+	<transaction type="sql" name="app_emr_info_step1" persistent="true">
+		select distinct
+		  a.ID as sourceId
+		, a.ACTLOG_ID as actlogId
+		, a.ANTETYPE_ID as antetypeId
+		, a.TITLE as title
+		, a.CONTENT as content
+		, a.CREAT_TIME as createTime
+		, a.CREATOR as creator
+		, a.EDIT_TIME as editTime
+		, a.EDITOR as editor
+		, c.CODE as hospitalPersonId
+		, b.BEGIN_TIME as docTime
+		, 'hospitalized' as operType
+		from BZ_DOC_LOG a
+		join BZ_ACT_LOG b on b.ID = a.ACTLOG_ID
+		join BZ_MASTER_CODES c on c.MASTER_ID = b.MASTER_ID and c.KIND = '病人ID'
+		where a.title in ('入院记录','病程记录','出院记录')
+	</transaction>
+	<transaction type="sql" name="app_emr_info_step2" persistent="true">
+		select distinct
+		  sourceId
+		, actlogId
+		, antetypeId
+		, title
+		, cast(unix_timestamp(createTime,'yyyy/MM/dd HH:mm:ss') as timestamp) as createTime
+		, creator
+		, cast(unix_timestamp(editTime,'yyyy/MM/dd HH:mm:ss') as timestamp) as editTime
+		, editor
+		, hospitalPersonId
+		, cast(unix_timestamp(docTime,'yyyy/MM/dd HH:mm:ss') as timestamp) as docTime
+		, 'hospitalized' as operType
+		, mytable.col1 as document1
+		, mytable.col2 as document2
+		from app_emr_info_step1
+		lateral view json_tuple(getemrinfo(content), 'document1', 'document2') mytable as col1, col2
+	</transaction>
+	<transaction type="sql" name="app_emr_info_step3" persistent="true"> <![CDATA[
+		select distinct
+		  t1.sourceId
+		, t2.eventId as hospitalFileId
+		, t1.title
+		, t1.creator
+		, t1.createTime
+		, t1.editor
+		, t1.editTime
+		, t1.document1
+		, t1.document2
+		, '1' as isActive
+		, now() as defaultTime
+		from app_emr_info_step2 t1
+		join app_emr_event_step4 t2 on t2.hospitalPersonId = t1.hospitalPersonId 
+		and t2.operType = t1.operType
+		and t1.docTime >= t2.beginTime
+		and t1.docTime <= t2.endTime
+		]]> 
+	</transaction>
+	
+	<!--病案主页-->
+	<!--损伤中毒-->
+	<transaction type="sql" name="app_emr_homepage_step1_p" persistent="true">
+		select BRID as hospitalPersonId,                                                                             <!--病人id-->
+			   case when injuryPoison is null or injuryPoison = '' then ' -' else injuryPoison end as injuryPoison,  <!--诊断描述-损伤中毒-->
+			   case when code is null or code = '' then '-' else code end as code 									 <!--疾病编码--> 
+		from (select A.BRID,
+		       		 max(substr(A.ZDMS, instr(A.ZDMS, ')') + 1)) as injuryPoison,  
+	   		   		 max(B.BM) as code  	
+  		  		from PATIENT_DIAGNOSIS_RECORD A left join DISEASE_CODING_DIRECTORY B on A.JBID = B.ID
+         	   where A.ZDCX = '1'
+                 and A.ZDLX = '7'
+               group by A.BRID
+             )
+	</transaction>
+	<transaction type="sql" name="app_emr_homepage_step1" persistent="true">
+		select hospitalPersonId, 
+			   collect_set((injuryPoison,code)) as injuryPoison  <!--损伤中毒-->
+		  from app_emr_homepage_step1_p
+		 group by hospitalPersonId
+	</transaction>
+
+	<!--诊断-->
+	<transaction type="sql" name="app_emr_homepage_step2_p" persistent="true">
+		select BRID as hospitalPersonId, 
+			   XH as orderNum,
+			   BM as code,
+			   RYBQ as inHospitalCondition,
+	           ZDMS as diagnoseDescribe,
+	           ZLJG as treatmentResults
+          from (
+				select ceil(a.XH / 2) FZ, a.BRID, a.XH , a.ZDMS, a.BM, a.RYBQ, a.ZLJG
+				  from (
+					select a.BRID,
+							 b.BM,
+						     concat(a.BZ, substr(a.ZDMS, instr(a.ZDMS, ')') + 1), case when a.SFYZ = '1' then '?' else '' end) as ZDMS,
+							 case a.RYBQ when '有' then '1' when '临床未确定' then '2' when '情况不明' then '3' when '无' then '4' else '' end as RYBQ,
+							 row_number() over(order by a.ZDLX,a.ZDCX, a.ID) as XH, 
+							 case when a.CYQK is null or a.CYQK = '' then '' end as ZLJG
+					  from PATIENT_DIAGNOSIS_RECORD a
+					  left join DISEASE_CODING_DIRECTORY b on a.JBID = b.ID
+						   join PATIENT_CASE_HOMEPAGE c on a.BRID = c.BRID and a.ZYID = c.ZYID 
+						   join PATIENT_INFORMATION d on c.BRID = d.BRID
+					  where a.JLLY = '3'
+                        and a.ZDLX in ('3','5','10')
+					   ) a ) 
+	</transaction>
+	<transaction type="sql" name="app_emr_homepage_step2" persistent="true">
+		select hospitalPersonId, 
+			   collect_set((orderNum, code, inHospitalCondition, diagnoseDescribe, treatmentResults)) as diagnose  <!--诊断-->
+		  from app_emr_homepage_step2_p
+		 group by hospitalPersonId
+	</transaction>
+
+	<!--过敏药物-->
+	<transaction type="sql" name="app_emr_homepage_step6_p" persistent="true">
+		select BRID as hospitalPersonId, <!--病人ID-->
+			   case when allergyDrug is null or allergyDrug = '' then '-' else allergyDrug end as allergyDrug, <!-- 过敏药物 -->
+		       case when countDrugAllergy = 0 then ' 1' else ' 2' end as drugAllergy                           <!-- 药物过敏 -->              
+	      from (
+				select BRID,
+					   concat_ws(',',collect_list(YWM)) as allergyDrug,
+					   count(1) as countDrugAllergy
+	      		  from PATIENT_ALLERGY_RECORD 
+	             where JLLY = '3'
+	               and JG = '1'
+	             group by BRID,JLSJ, YWM
+	           )
+	</transaction>
+	<transaction type="sql" name="app_emr_homepage_step6" persistent="true">
+		select hospitalPersonId, 
+		       collect_set((allergyDrug, drugAllergy)) as allergyDrug  <!--过敏药物-->
+		  from app_emr_homepage_step6_p
+		 group by hospitalPersonId
+	</transaction>
+
+	<!--病案主页从表-->
+	<transaction type="sql" name="app_emr_homepage_step7_p" persistent="true">
+		select A.BRID as hospitalPersonId,                                                                                <!--病人id-->
+			   max(case when XXM = '入院病室' then XXZ else '' end) as inHospitalHome,                                    <!--入院病室-->
+			   max(case when XXM = '转科记录' then regexp_replace(XXZ, ',', ' ――― ') else '-' end) AS transferNote,       <!--转科记录-->
+			   case max(case when upper(XXM) = 'RH' then XXZ else '' end) when '阴' then ' 1'
+					when '阳' then ' 2'	when ' 不详' then ' 3' when '未查' then ' 4' when '未做' then ' 4' 
+					else max(case when upper(XXM) = 'RH' then XXZ else '' end) end as RHValue,          				  <!--RH值-->	   
+			   max(case when XXM = '质控医师' then XXZ else '' end) as qualityControlDoctors,                             <!--质控医师-->
+			   max(case when XXM = '质控护士' then XXZ else '' end) as qualityControlNurse,                               <!--质控护士-->
+			   max(case when XXM = '不足周岁年龄' then XXZ else '-' end ) as notEnoughFullYearAge,                        <!--不足周岁年龄-->
+			   max(case when XXM = '新生儿出生体重' then XXZ else '-' end) as newBornBirthWeight,                         <!--新生儿出生体重-->
+			   max(case when XXM = '新生儿入院体重' then XXZ else '-' end) as newBornInHospitalWeight,                    <!--新生儿入院体重-->
+			   case max(case when XXM = '病案质量' then XXZ else '' end) when '甲' then ' 1'
+					when '乙' then ' 2' when '丙' then ' 3' 
+					else max(case when XXM = '病案质量' then XXZ else '' end) end as medicalRecordQuality,                <!--病案质量-->
+			   max(case when XXM = '主页质量日期' then XXZ else '' end) as qualityControl                                 <!--质控-->
+		  from PATIENT_CASE_HOMEPAGE_SLAVETABLE A left join PATIENT_CLINIC_PATH B on A.BRID = B.BRID and A.ZYID = B.ZYID
+		 group by A.BRID
+	</transaction>
+	<transaction type="sql" name="app_emr_homepage_step7" persistent="true">
+		select hospitalPersonId, 
+		       collect_set((inHospitalHome, transferNote, RHValue, qualityControlDoctors, qualityControlNurse, notEnoughFullYearAge
+		       				,newBornBirthWeight, newBornInHospitalWeight, medicalRecordQuality, qualityControl)) as homepageSlaveTable  <!--病案主页从表-->
+		  from app_emr_homepage_step7_p
+		 group by hospitalPersonId
+	</transaction>	
+
+	<!--病理诊断-->
+	<transaction type="sql" name="app_emr_homepage_step01" persistent="true"><![CDATA[
+		select BLH, BRID, ZYID
+		  from(
+				select
+					   max(distinct case when A.XXM = '病理号' then A.XXZ else '' end) as BLH,     
+					   max(B.BRID) as BRID,                                                 
+					   max(B.ZYID) as ZYID                                                  
+		          from PATIENT_CASE_HOMEPAGE_SLAVETABLE A 
+		               join PATIENT_CASE_HOMEPAGE B on A.BRID = B.BRID and A.ZYID = B.ZYID
+		          	   join PATIENT_INFORMATION D on D.BRID = B.BRID
+		         group by B.BRID
+           	  )
+         where (length(BLH) > 4 or length(BLH) = '')
+    	]]> 
+	</transaction>
+	<transaction type="sql" name="app_emr_homepage_step02" persistent="true"><![CDATA[
+		select BLZD,
+			   case when BM is null or BM = '' then ' -' else BM end as BM, 
+			   BRID,
+			   ZYID
+		  from (select max(BLZD) as BLZD,
+					   max(BM) as BM,
+					   max(BRID) as BRID,
+					   max(ZYID) as ZYID
+			  	  from (
+					    select concat_ws(',',collect_set(BLZD)) as BLZD,
+							   concat_ws(',',collect_set(BM)) as BM,
+							   BRID,
+							   ZYID
+						  from (
+								 select distinct case when B.MC is null or B.MC = '' then A.ZDMS else B.MC end as BLZD,  
+										B.BM as BM,                                               
+										C.BRID,                                                  
+										C.ZYID                                                   
+								   from (
+										 select max(C.BRID) as BRID,
+												max(C.ZYID) as ZYID,
+												max(substr(A.ZDMS, 2, 3)) as BM
+										   from PATIENT_DIAGNOSIS_RECORD A 
+										   join PATIENT_CASE_HOMEPAGE C on A.BRID = C.BRID and A.ZYID = C.ZYID
+										  where A.JLLY = '3'
+											and A.ZDLX = '3'
+										  group by C.BRID
+										) M 
+										join PATIENT_CASE_HOMEPAGE C on M.BRID = C.BRID and M.ZYID = C.ZYID
+										join PATIENT_INFORMATION D on C.BRID = D.BRID
+										join PATIENT_DIAGNOSIS_RECORD A on A.BRID = C.BRID and A.ZYID = C.ZYID
+										left join DISEASE_CODING_DIRECTORY B on A.JBID = B.ID 
+								  where A.ZDLX = '6'
+									and A.JLLY = '3'
+									and A.ZDCX < '3'
+								)
+						 group by BRID, ZYID
+						)
+				 group by BRID
+				)
+		]]> 
+	</transaction>
+	<transaction type="sql" name="app_emr_homepage_step8_p" persistent="true">
+		select distinct A.BRID as hospitalPersonId,  <!--病人id-->
+						max(case when A.BLH is null or A.BLH = '' then (case when C.XXM = '【病理诊断】' then XXZ else ' -' end) else B.BLZD end) as pathologicalDiagnose,  <!--病理诊断-->
+					    max(case when B.BM is null or B.BM = '' then ' -' else B.BM end) as code,      <!--编码-->
+					    max(case when A.BLH is null or A.BLH = '' then (case when C.XXM = '【病理号】' then XXZ else ' -' end) else A.BLH end) as numPathology              <!--病理号-->
+		  from app_emr_homepage_step01 A left join app_emr_homepage_step02 B on A.BRID = B.BRID and A.ZYID = B.ZYID
+			  						   left join PATIENT_CASE_HOMEPAGE_SLAVETABLE C on A.BRID = C.BRID and A.ZYID = C.ZYID
+		 group by A.BRID
+	</transaction>
+	<transaction type="sql" name="app_emr_homepage_step8" persistent="true">
+		select hospitalPersonId, 
+		       collect_set((pathologicalDiagnose, code, numPathology)) as pathologicalDiagnose  <!--病理诊断-->
+		  from app_emr_homepage_step8_p
+		 group by hospitalPersonId
+	</transaction>	
+
+	<!--手术情况-->
+	<transaction type="sql" name="app_emr_homepage_surgery01" persistent="true"><![CDATA[
+		select e.BRID as hospitalPersonId, --病人id
+			   case when c.BM is null or c.BM = '' then '' end as operationCode,     --手术编码
+			   from_unixtime(unix_timestamp(a.SSRQ), 'YYYY-MM-DD') as operationDate, --手术日期   
+			   a.SSJB as operationRank, --手术级别
+		       substr(a.YXSS ,instr(a.YXSS,'☆')+1) as operationName, --手术名称 
+			   a.ZDYS as operatePerson, --术者
+		       a.DYZS as assistant1,    --一助
+			   -- a.DEZS as assistant2,   --二助
+			   concat(a.QK, '/', a.YH) as woundHealingRank,  --切口愈合等级
+			   case when a.MZLX is null or a.MZLX = '' then f.MC else a.MZLX end as anesthesiaMethod, --麻醉方式
+			   a.MZYS as anesthesiaDoctor --麻醉医师
+		  from PATIENT_HAND_PARALYSIS_RECORD a 
+		  left join TREATMENT_ITEM_DIRECTORY b on a.ZLXMID = b.ID 
+		  left join DISEASE_CODING_DIRECTORY c on a.SSCZID = c.ID 
+		  left join TREATMENT_ITEM_DIRECTORY f on a.MZFS = f.ID
+		       join PATIENT_CASE_HOMEPAGE d on a.ZYID = d.ZYID and a.BRID = d.BRID 
+			   join PATIENT_INFORMATION e on d.BRID = e.BRID  
+		 where a.JLLY = '3'
+		   and (a.QK <> '0' or a.QK = '')
+		 order by a.ID
+		 ]]> 
+	</transaction>
+	<transaction type="sql" name="app_emr_homepage_surgery" persistent="true">
+		select hospitalPersonId, 
+		       collect_set((operationCode, operationDate, operationRank, operationName, operatePerson
+		       				assistant1, woundHealingRank, anesthesiaMethod, anesthesiaDoctor)) as operation  <!--手术情况-->
+		  from app_emr_homepage_operation01
+		 group by hospitalPersonId
+	</transaction>	
+
+	<!--操作情况-->
+	<transaction type="sql" name="app_emr_homepage_operation01" persistent="true"><![CDATA[
+		select e.BRID as hospitalPersonId, --病人id
+			   case when c.BM is null or c.BM = '' then '' end as operationCode,     --操作编码
+			   from_unixtime(unix_timestamp(a.SSRQ), 'YYYY-MM-DD') as operationDate, --操作日期   
+			   a.SSJB as operationRank, --操作级别
+		       substr(a.YXSS ,instr(a.YXSS,'☆')+1) as operationName, --操作名称 
+			   a.ZDYS as operatePerson, --术者
+		       a.DYZS as assistant1,    --一助
+			   -- a.DEZS as assistant2, --二助
+			   concat(a.QK, '/', a.YH) as woundHealingRank,  --切口愈合等级
+			   case when a.MZLX is null or a.MZLX = '' then f.MC else a.MZLX end as anesthesiaMethod, --麻醉方式
+			   a.MZYS as anesthesiaDoctor --麻醉医师
+		  from PATIENT_HAND_PARALYSIS_RECORD a 
+		  left join TREATMENT_ITEM_DIRECTORY b on a.ZLXMID = b.ID 
+		  left join DISEASE_CODING_DIRECTORY c on a.SSCZID = c.ID 
+		  left join TREATMENT_ITEM_DIRECTORY f on a.MZFS = f.ID
+		       join PATIENT_CASE_HOMEPAGE d on a.ZYID = d.ZYID and a.BRID = d.BRID 
+			   join PATIENT_INFORMATION e on d.BRID = e.BRID  
+		 where a.JLLY = '3'
+		   and a.QK = '0'
+		 order by a.ID
+		 ]]> 
+	</transaction>
+	<transaction type="sql" name="app_emr_homepage_operation" persistent="true">
+		select hospitalPersonId, 
+		       collect_set((operationCode, operationDate, operationRank, operationName, operatePerson
+		       				assistant1, woundHealingRank, anesthesiaMethod, anesthesiaDoctor)) as operation_b  <!--操作情况-->
+		  from app_emr_homepage_operation_b01
+		 group by hospitalPersonId
+	</transaction>	
+
+	<!--病案主页病人基本信息-->
+	<transaction type="sql" name="app_emr_homepage_step9" persistent="true"><![CDATA[
+		select A.BRID as hospitalPersonId,  --病人id
+			   B.ZYID as homePageId,  	    --主页id
+			   B.ZYH as inHospitalId,  		--住院号
+			   B.XM as name,   				--姓名
+			   B.XB AS sex,					--性别
+			   A.JKH as healthNumber,		--健康号
+			   B.ZYH as admissionNumber,    --住院号
+			   A.MZH as outpatientNumber,   --门诊号
+			   A.DQCH as badNo,             --入院病床*当前床号
+			   case when B.HKDZ is null or B.HKDZ = '' then '-' else B.HKDZ end as registeredAddress,        --户口地址
+			   case when B.HKDZYB is null or B.HKDZYB = '' then '-' else B.HKDZYB end as registeredPostcode,   --户口地址邮编
+			   H.MC as hospitalizedForm,												   --入院方式
+			   B.ZRHS as primaryNurse,                                                     --责任护士
+			   I.BM as bloodType,                                                          --血型
+			   case B.CYFS when '正常' then '1' when '转院' then '2' when '转社区' then '3' when '非医嘱离院'then '4' when '死亡' then '5' when '其他' then '9' else J.BM end as dischargedWay,               --出院方式
+			   A.CSRQ as birthday,			--出生日期
+			   case when A.CSDD is null or A.CSDD = '' then '-' else A.CSDD end as birthPlace,            --出生地点  			
+			   case when A.SFZH is null or A.SFZH = '' then '-' else A.SFZH end as idNumber,		      --idNumber
+		       case when A.SFZH is null or A.SFZH = '' then '-' else A.SFZH end as PMINO,                 --PMINO
+			   case when A.JG is null or A.JG = '' then '-' else A.JG end as nativePlace,		          --籍贯
+			   case when A.MZ is null or A.MZ = '' then '-' else A.MZ end as nation,                    --民族
+			   E.BM as paymentMethod,											        --付款方式
+			   B.NL as age,													            --年龄
+			   G.MC as maritalStatus,											        --婚姻状况
+			   case when B.ZY is null or B.ZY = '' then '-' else B.ZY end as job,				        --职业
+			   case when B.GJ is null or B.GJ = '' then '-' else B.GJ end as nationality,		        --国籍
+			   case when B.QY is null or B.QY = '' then '-' else B.QY end as region,			        --区域
+			   case when B.JTDZ is null or B.JTDZ = '' then '-' else B.JTDZ end as homeAddress,	        --家庭地址
+			   case when B.JTDH is null or B.JTDH = '' then '-' else B.JTDH  end as homePhone,	        --家庭电话
+			   case when B.JTDZYB is null or B.JTDZYB = '' then '-' else B.JTDZYB end as homePostcode,	--家庭地址邮编
+			   case when B.DWDZ is null or B.DWDZ = '' then '-' else B.DWDZ end as companyAddress,		--单位地址
+			   case when B.DWDH is null or B.DWDH = '' then '-' else B.DWDH end as companyPhone,			--单位电话
+			   case when B.DWYB is null or B.DWYB = '' then '-' else B.DWYB end as companyPostcode,		--单位邮编
+			   case when B.LXRXM is null or B.LXRXM = '' then '-' else B.LXRXM end as contactName,			--联系人姓名
+			   case when B.LXRGX is null or B.LXRGX = '' then '-' else B.LXRGX end as contactRelation,		--联系人关系
+			   case when B.LXRDH is null or B.LXRDH = '' then '-' else B.LXRDH end as contactPhone,		--联系人电话
+			   case when B.LXRDZ is null or B.LXRDZ = '' then '-' else B.LXRDZ end as contactAddress,		--联系人地址
+		       B.RYRQ as hospitalizedDate,											  	--入院日期
+			   C.MC as hospitalizedDepartment,											--入院部门
+			   case when B.RYBK is null or B.RYBK = '' then '-' else B.RYBK end as hospitalizedCondition, --入院病况
+			   B.CYRQ as dischargedDate,												--出院日期
+			   D.MC as dischargedDepartment,											--出院部门
+			   case when datediff(to_date(case when B.CYRQ is null or B.CYRQ = '' then (case when L.KSZXSJ is null or L.KSZXSJ = '' then current_date else L.KSZXSJ end) else B.CYRQ end, 'yyyy/MM/dd HH:mm:ss'), to_date(B.RYRQ, 'yyyy/MM/dd HH:mm:ss')) = 0 then '1' else datediff(to_date(case when B.CYRQ is null or B.CYRQ = '' then (case when L.KSZXSJ is null or L.KSZXSJ = '' then current_date else L.KSZXSJ end) else B.CYRQ end, 'yyyy/MM/dd HH:mm:ss'), to_date(B.RYRQ, 'yyyy/MM/dd HH:mm:ss')) end as inpatientDays,	--住院天数
+			   case when B.SFQZ = '1' then '√' else '' end as isDefinite, 										--是否确诊
+			   B.QZRQ as definiteDate,																			--确诊日期
+			   case when B.QJCS = '' then ' -' else B.QJCS end as saveNumber,									--抢救次数
+			   case when B.CGCS = '' then ' -' else B.CGCS end as successNumber,	  							--成功次数
+			   case when B.XFZL = '1' then '√' else '' end as newTumor,										    --新发肿瘤
+			   case B.ZYZLLB  when '中' then ' 1.1' when '民族' then ' 1.2' when '中西' then ' 2' when '西' then ' 3' end as tcmTreatmentType,  --中西治疗类别
+		 	   case when B.CYFS = '死亡' then (case when B.SJBZ = 1 then '1' else '2' end) else '-' end as autopsyLogo,							--尸检标志
+			   case when (case when B.SZQX is null or B.SZQX = '' then 0 end) = 0 then null else 1 end as followUpFlag,			--随诊标志
+			   concat((case when B.SZQX = 0  then ' -' when B.SZQX = '' then ' -' else B.SZQX end), (case (case when B.SZBZ is null or B.SZBZ = '' then 0 else B.SZBZ end) when '1' then '月' when '2' then '年' when '3' then '周' when '4' then '天' when '9' then '终身' else '' end)) as followUpDeadline,								--随诊期限  
+			   B.MZYS as outpatientDoctor,																		--门诊医师
+			   B.ZYYS as residentDoctor,																		--住院医师
+			   case when CYRQ is null or CYRQ = '' then '请于病人出院后打印，具体以护士从【预出院】拉到【出院】状态为准' else CYRQ end as whetherOutHospital --是否出院
+			   'HN001' as hospitalId,																			--hospitalId
+			   '海南省人民医院' as hospitalName 																--医院名称
+		 from PATIENT_INFORMATION A left join PATIENT_CASE_HOMEPAGE B on A.BRID = B.BRID 
+	                                left join (select A.KSZXSJ,A.BRID,A.ZYID from PATIENT_ORDER_RECORD A inner join PATIENT_CASE_HOMEPAGE B on A.BRID = B.BRID and A.ZYID = B.ZYID
+															and A.YZZT in ('3','8') and A.ZLLB = 'Z'
+															and (A.YZNR like '%出院%' or A.YZNR like '%死%' or YZNR like '%逃%')
+											  ) L on B.BRID = L.BRID and B.ZYID = L.ZYID
+									  left join DIM_DEPARTMENT C on B.RYKSID = C.ID
+									  left join DIM_DEPARTMENT D on B.CYKSID = D.ID
+									  left join DIM_MEDICAL_PAYMENT_METHOD E on B.YLFKFS = E.MC
+									  left join DIM_MARRIAGE_TYPE G on B.HYZK = G.MC
+									  left join DIM_HOSPITAL_ADMISSION_METHOD H on B.RYFS = H.MC
+									  left join DIM_BLOOD_TYPE I on B.XX = I.MC 
+									  left join DIM_DISCHARGE_METHOD J on B.CYFS = J.MC
+		where cast(unix_timestamp(B.DJSJ,'yyyy/MM/dd HH:mm:ss') as timestamp) >= cast(unix_timestamp('2010-01-01 00:00:00', 'yyyy-MM-dd HH:mm:ss') as timestamp)
+		]]>
+	</transaction>
+
+	<!-- 病案主页-整合 -->
+	<transaction type="sql" name="app_emr_homepage_step10" persistent="true">
+		select A.*, app_emr_event_step4.eventId as hospitalFileId from (
+		select A.*, 
+			   B.injuryPoison,  	    <!--损伤中毒-->
+			   C.diagnose,              <!--诊断-->
+			   F.whetherOutHospital, 	<!--是否出院-->
+			   G.allergyDrug,        	<!--过敏药物-->
+			   H.homepageSlaveTable, 	<!--病案主页从表-->
+			   I.pathologicalDiagnose, 	<!--病理诊断-->
+			   J.operation,             <!--手术情况-->
+			   K.operation_b            <!--操作情况-->
+		  from app_emr_homepage_step9 A
+		  left join app_emr_homepage_step1 B on A.hospitalPersonId = B.hospitalPersonId
+		  left join app_emr_homepage_step2 C on A.hospitalPersonId = C.hospitalPersonId
+		  left join app_emr_homepage_step5 F on A.hospitalPersonId = F.hospitalPersonId
+		  left join app_emr_homepage_step6 G on A.hospitalPersonId = G.hospitalPersonId
+		  left join app_emr_homepage_step7 H on A.hospitalPersonId = H.hospitalPersonId
+		  left join app_emr_homepage_step8 I on A.hospitalPersonId = I.hospitalPersonId
+		  left join app_emr_homepage_operation J on A.hospitalPersonId = J.hospitalPersonId
+		  left join app_emr_homepage_operation_b K on A.hospitalPersonId = K.hospitalPersonId
+		  ) A join app_emr_event_step4 on A.hospitalPersonId = app_emr_event_step4.hospitalPersonId
+	</transaction>	
+	
+	</transactions>
+	
+	<sink name="app_emr_person" transaction_name="app_emr_person_step2"  type="mongodb" mongodb_uri="mongodb://root:qwer,1234@emr-dbserver2:27017/" mongodb_name="smart_medical" mongodb_collection="emr_person" external_table="true" save_mode="Overwrite" />
+	<sink name="app_emr_event" transaction_name="app_emr_event_step4"  type="mongodb" mongodb_uri="mongodb://root:qwer,1234@emr-dbserver2:27017/" mongodb_name="smart_medical" mongodb_collection="emr_event" external_table="true" save_mode="Overwrite" />
+	<sink name="app_emr_order" transaction_name="app_emr_order_step3"  type="mongodb" mongodb_uri="mongodb://root:qwer,1234@emr-dbserver2:27017/" mongodb_name="smart_medical" mongodb_collection="emr_order" external_table="true" save_mode="Overwrite" />
+	<sink name="app_emr_medical_examination" transaction_name="app_emr_medical_examination_step6"  type="mongodb" mongodb_uri="mongodb://root:qwer,1234@emr-dbserver2:27017/" mongodb_name="smart_medical" mongodb_collection="emr_medical_examination" external_table="true" save_mode="Overwrite" />
+	<sink name="app_emr_check" transaction_name="app_emr_check_step6"  type="mongodb" mongodb_uri="mongodb://root:qwer,1234@emr-dbserver2:27017/" mongodb_name="smart_medical" mongodb_collection="emr_check" external_table="true" save_mode="Overwrite" />
+	<sink name="app_emr_diagnostic" transaction_name="app_emr_diagnostic_step2"  type="mongodb" mongodb_uri="mongodb://root:qwer,1234@emr-dbserver2:27017/" mongodb_name="smart_medical" mongodb_collection="emr_diagnostic" external_table="true" save_mode="Overwrite" />
+	<sink name="app_emr_info" transaction_name="app_emr_info_step3"  type="mongodb" mongodb_uri="mongodb://root:qwer,1234@emr-dbserver2:27017/" mongodb_name="smart_medical" mongodb_collection="emr_info" external_table="true" save_mode="Overwrite" />
+	<sink name="app_emr_homepage" transaction_name="app_emr_homepage_step10"  type="mongodb" mongodb_uri="mongodb://root:qwer,1234@emr-dbserver2:27017/" mongodb_name="smart_medical" mongodb_collection="emr_homepage" external_table="true" save_mode="Overwrite" />
+	
+	<!-- <sink name="app_emr_info_markup" transaction_name="app_emr_info_step5"  type="mongodb" mongodb_uri="mongodb://root:qwer,1234@emr-dbserver2:27017/" mongodb_name="markup_system" mongodb_collection="emr_info" external_table="false" save_mode="Overwrite" /> -->
+	
+</channel>
